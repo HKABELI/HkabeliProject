@@ -85,6 +85,7 @@ export default {
     },
     PlayAll() {
       this.songs.forEach((song) => {
+        song.file.loop=true;
         song.playing = true;
         song.file.play();
       });
